@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="logo.png" type="image/png">
-    
+
     <style>
       .card-login {
         padding: 30px 0 0 0;
@@ -51,6 +51,14 @@
                   </div>
 
                 <?  } ?>
+
+                <? if(isset($_GET['login']) && $_GET['login'] == 'erro2'){ ?>
+                 
+                 <div class="text-danger">
+                   Faça login antes de acessar as páginas protegidas!
+                 </div>
+
+               <?  } ?>
 
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
